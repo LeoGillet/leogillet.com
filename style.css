@@ -1,0 +1,51 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background */
+.logo {
+    display: block;
+    object-fit: scale-down;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-top: -67.5px;
+    margin-left: -132px;
+
+}
+
+
+/* Social Icons */
+.social-icons {
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    margin-left: -166.65px;
+
+
+}
+
+.social-icons a{
+    margin: 0 24px;
+}
+
+
+/* Footer */
+.footer-content{
+    position: absolute;
+    font-size: 9pt;
+    font-style: normal;
+    color: gray;
+    margin-left: 24px;
+    bottom: 1%;
+}
+
