@@ -10,16 +10,14 @@ body {
 }
 
 /* Background */
-.logo {
-    display: block;
-    object-fit: scale-down;
-    width: auto;
+#imglogo {
+    max-width: 100%;
     height: auto;
     position: absolute;
     left: 50%;
     top: 40%;
     margin-top: -67.5px;
-    margin-left: -132px;
+    margin-left: -198px;
 
 }
 
