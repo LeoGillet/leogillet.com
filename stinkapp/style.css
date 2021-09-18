@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i,600,700,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background: #000000;
+}
+
+/* Header */
+.identity {
+    position: relative;
+    color: #dddddd;
+    font-size: 500%;
+    left: 50%;
+    top: 2%;
+    margin-left: -384px;
+}
+
+
+/* Strengths */
+.strengths-1 {
+    font-size: 300%;
+    color: grey;
+}
+.highlighted_adj {
+    color: azure;
+}
