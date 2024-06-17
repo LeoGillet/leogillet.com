@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Iosevka Term Slab';
+    src: url('../public/IosevkaTermSlabNerdFont-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Iosevka Term Slab';
+    font-weight: bold;
+    src: url('../public/IosevkaTermSlabNerdFont-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Iosevka Term Slab';
+    font-style: italic;
+    src: url('../public/IosevkaTermSlabNerdFont-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Iosevka Term Slab';
+    font-weight: bold;
+    font-style: italic;
+    src: url('../public/IosevkaTermSlabNerdFont-BoldItalic.woff') format('woff');
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.smaller {
+    font-size: 0.95rem;
+}
+
+body {
+    font-family: 'Iosevka Term Slab', monospace;
+}
+
+.font-rollback {
+    font-family: monospace;
+}
