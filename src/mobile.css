@@ -1,0 +1,91 @@
+@media screen and (max-width: 480px) {
+    body {
+        border: 2px dashed red;
+        margin-bottom: 10%;
+    }
+
+    .mobile-sticky {
+        background: var(--bg-color);
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding: 0.5rem 0 1rem 0;
+    }
+
+
+    .header, .man-header, .man-content {
+        padding: 0 1rem;
+    }
+
+    .header {
+        font-size: 2rem;
+        width: max-content;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .tabs-wrapper {
+        position: sticky;
+    }
+
+    .tabs {
+        display: inline-flex;
+        text-transform: uppercase;
+        justify-content: space-evenly;
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    .footer-wrapper {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer {
+        display: inline-flex;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background: var(--text-color);
+        color: var(--bg-color);
+    }
+
+    #font, #location {
+        display: none;
+    }
+
+    .main {
+        font-size: 1.2rem;
+    }
+
+    .overview {
+        padding: 0 5%;
+    }
+
+    .man-header-token-left {
+        padding: 0 0.10rem 0 0;
+    }
+
+    .man-header-token-right {
+        padding: 0 0 0 0.10rem;
+    }
+
+    .overview {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .overview-description {
+        padding: 0 0 1rem 0;
+    }
+
+    .man-footer {
+        font-size: 0.8rem;
+    }
+}

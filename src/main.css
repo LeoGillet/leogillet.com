@@ -34,31 +34,9 @@ body {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .header {
-        width: 100%;
-        padding: 1em auto;
-        margin: 0 5em;
-    }
-
-    .header-text {
-        font-size: 4rem;
-    }
-
-    .tabs {
-        text-transform: uppercase;
-        display: inline-flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        list-style-type: none;
-    }
-}
-
 @media screen and (min-width: 481px) {
-    .header {
-        padding: 1.5em 10%;
+    .header, .man-header, .man-content {
+        padding: 0 1rem;
     }
 
     .tabs {
@@ -70,29 +48,37 @@ body {
         width: 100%;
         list-style-type: none;
     }
-}
 
+    .footer-wrapper {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 
+    .main {
+        padding: 2rem 0;
+    }
 
-
-
-
-.footer-wrapper {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer {
-    display: inline-flex;
-    list-style-type: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    background: var(--text-color);
-    color: var(--bg-color);
+    
+    .footer {
+        display: inline-flex;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background: var(--text-color);
+        color: var(--bg-color);
+    }
+    
+    .overview {
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: 0.4fr 1.6fr;
+        grid-gap: repeat(4, auto);
+        grid-auto-rows: minmax(1rem, auto);
+    }
 }
 
 .tab {
@@ -114,12 +100,6 @@ body {
     text-align: center;
 }
 
-.main-wrapper {
-    font-size: 1.15em;
-    margin: 2rem 3.5rem;
-    padding: 0;
-    /* border: 1px solid var(--text-color); */
-}
 
 .man-header-list {
     display: inline-flex;
@@ -128,10 +108,6 @@ body {
     padding: 0;
     width: 100%;
     list-style-type: none;
-}
-
-.man-footer-wrapper {
-    margin-top: 5px;
 }
 
 .man-footer {
@@ -148,21 +124,6 @@ body {
     margin: 5%;
 }
 
-@media (max-width:480px) {
-    .overview {
-        display: flex;
-    }
-}
-
-@media (min-width:481px) {
-    .overview {
-        margin: 0 5%;
-        display: grid;
-        grid-template-columns: 0.4fr 1.6fr;
-        grid-gap: repeat(4, auto);
-        grid-auto-rows: minmax(1rem, auto);
-    }
-}
 
 
 .overview-name {

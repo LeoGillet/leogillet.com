@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>leogillet(dot)com</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
@@ -30,56 +30,62 @@
     }
   </script>
   <link rel="stylesheet" href="src/main.css" />
+  <link rel="stylesheet" href="src/mobile.css" />
   <link rel="stylesheet" href="src/fonts.css" />
   <script src="https://kit.fontawesome.com/2833c8b616.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="header">
-    <h1 class="header-text">lgillet$ <span class="blink-me">_</span></h1>
+  <div class="mobile-sticky">
+    <h1 class="header">lgillet$ <span class="blink-me">_</span></h1>
+    <div class="tabs-wrapper">
+      <ul class="tabs">
+        <li class="tab bold selected" id="codingTab">Coding/</li>
+        <li class="tab bold" id="othersTab">Stuff/</li>
+        <li class="tab bold" id="contactTab">Contact/</li>
+      </ul>
+    </div>
   </div>
-  <div class="tabs-wrapper">
-    <ul class="tabs">
-      <li class="tab bold selected" id="codingTab">Coding/</li>
-      <li class="tab bold" id="othersTab">Stuff/</li>
-      <li class="tab bold" id="contactTab">Contact/</li>
-    </ul>
-  </div>
-  <div class="main-wrapper">
 
-    <!-- CODING -->
-    <div class="main" id="codingDiv" style="display: block">
-      <div class="man-header">
-        <ul class="man-header-list">
-          <li>CODING(1)</li>
-          <li class="text-center">General Projects</li>
-          <li>CODING(1)</li>
-        </ul>
-      </div>
-      <div class="man-content">
-        <span class="man-text-title">NAME</span><br>
-        <span class="man-text-normal">Work apps and various scripts</span><br><br>
+  <!-- CODING -->
+  <div class="main" id="codingDiv" style="display: block">
+    <div class="man-header">
+      <ul class="man-header-list">
+        <li class="man-header-token-left">CODING(1)</li>
+        <li class="text-center">General Projects</li>
+        <li class="man-header-token-right">CODING(1)</li>
+      </ul>
+    </div>
+    <div class="man-content">
+      <span class="man-text-title">NAME</span><br>
+      <span class="man-text-normal">Work apps and various scripts</span><br><br>
 
 
-        <span class="man-text-title">OVERVIEW</span><br>
-        <div class="overview">
-          <div class="overview-name"><a class="overview-link" href="https://github.com/LeoGillet/trafficaddon">trafficaddon</a></div>
-          <div class="overview-description">Simple drag-and-drop reverse-engineered lua script to use custom traffic pools on your FiveM server</div>
+      <span class="man-text-title">OVERVIEW</span><br>
+      <div class="overview">
+        <div class="overview-name"><a class="overview-link"
+            href="https://github.com/LeoGillet/trafficaddon">trafficaddon</a></div>
+        <div class="overview-description">Simple drag-and-drop reverse-engineered lua script to use custom traffic
+          pools on your FiveM server</div>
 
-          <div class="overview-name"><a class="overview-link" href="https://github.com/LeoGillet/chap-docker">chap-docker</a> <i class="fa-brands fa-docker"></i></div>
-          <div class="overview-description">Minimal debian docker image with CHAP and GROMACS installations</div>
-        </div>
+        <div class="overview-name"><a class="overview-link"
+            href="https://github.com/LeoGillet/chap-docker">chap-docker</a> <i class="fa-brands fa-docker"></i></div>
+        <div class="overview-description">Minimal debian docker image with CHAP and GROMACS installations</div>
       </div>
 
       <br>
       <span class="man-text-title">IN PROGRESS</span><br>
       <div class="overview">
         <div class="overview-name">py-target-enrichment</div>
-        <div class="overview-description">Rich Python pipeline for the sequencing analysis of target-enriched bacterial genomes</div>
+        <div class="overview-description">Rich Python pipeline for the sequencing analysis of target-enriched bacterial
+          genomes</div>
         <div class="overview-name">Channelizator</div>
         <div class="overview-description">Predict and draw channel pores pathways from PDB models</div>
         <div class="overview-name">CideRGB</div>
-        <div class="overview-description">Synchronize RGB with <a class="overview-link" href="https://cider.sh/">Cider</a> - compatible with the OpenRGB, Razer Chroma SDK and Logitech's LED Illumination SDK backends</div>
+        <div class="overview-description">Synchronize RGB with <a class="overview-link"
+            href="https://cider.sh/">Cider</a>
+          - compatible with the OpenRGB, Razer Chroma SDK and Logitech's LED
+          Illumination SDK backends</div>
         <div class="overview-name">parcfer.me</div>
         <div class="overview-description">Review sim-racing telemetry on a self-hosted web application</div>
         <div class="overview-name">hello.fm</div>
@@ -89,46 +95,50 @@
       <br>
       <span class="man-text-title">AVAILABILITY</span><br>
       <span class="man-text-normal">Work in progress and other projects may be available on:</span><br>
-      <span class="man-text-normal overview-name"><a class="overview-link" href="https://github.com/LeoGillet/">GitHub</a></span><br>
-      <span class="man-text-normal overview-name"><a class="overview-link" href="https://gitlab.com/users/LeoGillet/">GitLab</a></span><br>
+      <span class="man-text-normal overview-name"><a class="overview-link"
+          href="https://github.com/LeoGillet/">GitHub</a></span><br>
+      <span class="man-text-normal overview-name"><a class="overview-link"
+          href="https://gitlab.com/users/LeoGillet/">GitLab</a></span><br>
       <br>
-      <div class="man-footer-wrapper">
-        <span class="man-footer">
-          &nbsp;Manual page coding(1) line 1 (press h for help or q to quit)<span class="blink-block-me">&nbsp;</span>
-        </span>
-      </div>
+
     </div>
+    <span class="man-footer">Manual page coding(1) line 1 (press h for help or q to quit)<span
+        class="blink-block-me">&nbsp;</span></span>
+  </div>
 
 
-    <!-- OTHERS -->
-    <div class="main" id="othersDiv" style="display: none">
-      <div class="man-header">
-        <ul class="man-header-list">
-          <li>STUFF(1)</li>
-          <li class="text-center">The Unclassifiables</li>
-          <li>STUFF(1)</li>
-        </ul>
-      </div>
-      <div class="man-content">
-        <span class="man-text-title">NAME</span><br>
-        <span class="man-text-normal">Miscellaneous projects, liveries, graphic design and music</span><br><br>
+  <!-- OTHERS -->
+  <div class="main" id="othersDiv" style="display: none">
+    <div class="man-header">
+      <ul class="man-header-list">
+        <li class="man-header-token-left">STUFF(1)</li>
+        <li class="text-center">The Unclassifiables</li>
+        <li class="man-header-token-right">STUFF(1)</li>
+      </ul>
+    </div>
+    <div class="man-content">
+      <span class="man-text-title">NAME</span><br>
+      <span class="man-text-normal">Miscellaneous projects, liveries, graphic design and music</span><br><br>
 
 
-        <span class="man-text-title">OVERVIEW</span><br>
-        <div class="overview">
-          <div class="overview-name"><a class="overview-link" href="https://leogillet.com/covers">16:9 Covers</a></div>
-          <div class="overview-description">Album Covers extended to 16:9 resolution using generative AI</span></div>
+      <span class="man-text-title">OVERVIEW</span><br>
+      <div class="overview">
+        <div class="overview-name"><a class="overview-link" href="https://leogillet.com/covers">16:9 Covers</a></div>
+        <div class="overview-description">Album Covers extended to 16:9 resolution using generative AI</span></div>
 
 
-          <div class="overview-name"><a class="overview-link" href="https://github.com/LeoGillet/trafficaddon">ETS2Dashboards</a></div>
-          <div class="overview-description">Collection of Euro Truck Simulator 2 SimHub dashboards - <span>now maintained by <a class="overview-link" href="https://github.com/milokp">milokp</a></span></div>
+        <div class="overview-name"><a class="overview-link"
+            href="https://github.com/LeoGillet/trafficaddon">ETS2Dashboards</a></div>
+        <div class="overview-description">Collection of Euro Truck Simulator 2 SimHub dashboards - <span>now
+            maintained by <a class="overview-link" href="https://github.com/milokp">milokp</a></span></div>
 
-          <div class="overview-name"><a class="overview-link" href="https://github.com/LeoGillet/TeejeeTech_conky_cpu16">conky (16-Core)</a></div>
-          <div class="overview-description">Simple conky config for 16-core CPUs</div>
+        <div class="overview-name"><a class="overview-link"
+            href="https://github.com/LeoGillet/TeejeeTech_conky_cpu16">conky (16-Core)</a></div>
+        <div class="overview-description">Simple conky config for 16-core CPUs</div>
 
-          <div class="overview-name"><a class="overview-link" href="https://gitlab.com/LeoGillet/dotfiles">dotfiles</a></div>
-          <div class="overview-description">My dotfiles - includes sway, zsh & alacritty configs</div>
+        <div class="overview-name"><a class="overview-link" href="https://gitlab.com/LeoGillet/dotfiles">dotfiles</a>
         </div>
+        <div class="overview-description">My dotfiles - includes sway, zsh & alacritty configs</div>
       </div>
 
       <br>
@@ -139,60 +149,61 @@
       </div>
       <br>
 
-      <div class="man-footer-wrapper">
-        <span class="man-footer">
-          &nbsp;Manual page stuff(1) line 1 (press h for help or q to quit)<span class="blink-block-me">&nbsp;</span>
-        </span>
-      </div>
+    </div>
+    <span class="man-footer">Manual page stuff(1) line 1 (press h for help or q to quit)<span
+        class="blink-block-me">&nbsp;</span></span>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="main" id="contactDiv" style="display: none">
+    <div class="man-header">
+      <ul class="man-header-list">
+        <li class="man-header-token-left">CONTACT(1)</li>
+        <li class="text-center">Contact Information</li>
+        <li class="man-header-token-right">CONTACT(1)</li>
+      </ul>
     </div>
 
-    <!-- CONTACT -->
-    <div class="main" id="contactDiv" style="display: none">
-      <div class="man-header">
-        <ul class="man-header-list">
-          <li>CONTACT(1)</li>
-          <li class="text-center">Contact Information</li>
-          <li>CONTACT(1)</li>
-        </ul>
-      </div>
+
+    <div class="man-content">
+      <span class="man-text-title">MAIL</span><br>
+      <span class="man-text-normal">leo@leogillet.com</span><br>
 
 
-      <div class="man-content">
-        <span class="man-text-title">MAIL</span><br>
-        <span class="man-text-normal">leo@leogillet.com</span><br>
-
-
-        <br>
-        <span class="man-text-title">SOCIALS</span><br>
-        <div class="overview">
-          <div class="overview-name"><a class="overview-link" href="https://x.com/leogillet_"><span class="font-rollback">𝕏</span> - Twitter</a></div>
-          <div class="overview-description">Endlessly scroll through negativity</div>
-          <div class="overview-name"><a class="overview-link" href="https://linkedin.com/in/leogillet">LinkedIn</a></div>
-          <div class="overview-description"></div>
-          <div class="overview-name"><a class="overview-link" href="https://last.fm/user/LeoGillet">Last.fm</a></div>
-          <div class="overview-description">Judge my music taste</div>
-          <div class="overview-name"><a class="overview-link" href="https://www.albumoftheyear.org/user/leogillet/">AOTY</a></div>
-          <div class="overview-description">Judge my music ratings</div>
-          <div class="overview-name"><a class="overview-link" href="https://www.discogs.com/user/LeoGillet/">Discogs</a></div>
-          <div class="overview-description">Judge my music collection</div>
-          <div class="overview-name"><a class="overview-link" href="https://steamcommunity.com/id/leyog">Steam</a></div>
-          <div class="overview-description italic">The sluggard willeth, and willeth not [...] Proverbs 13:4</div>
+      <br>
+      <span class="man-text-title">SOCIALS</span><br>
+      <div class="overview">
+        <div class="overview-name"><a class="overview-link" href="https://x.com/leogillet_"><span
+              class="font-rollback">𝕏</span> - Twitter</a></div>
+        <div class="overview-description">Endlessly scroll through negativity</div>
+        <div class="overview-name"><a class="overview-link" href="https://linkedin.com/in/leogillet">LinkedIn</a>
         </div>
+        <div class="overview-description"></div>
+        <div class="overview-name"><a class="overview-link" href="https://last.fm/user/LeoGillet">Last.fm</a></div>
+        <div class="overview-description">Judge my music taste</div>
+        <div class="overview-name"><a class="overview-link"
+            href="https://www.albumoftheyear.org/user/leogillet/">AOTY</a></div>
+        <div class="overview-description">Judge my music ratings</div>
+        <div class="overview-name"><a class="overview-link" href="https://www.discogs.com/en/user/LeoGillet">Discogs</a>
+        </div>
+        <div class="overview-description">Judge my music collection</div>
+        <div class="overview-name"><a class="overview-link" href="https://steamcommunity.com/id/leyog">Steam</a></div>
+        <div class="overview-description italic">The sluggard willeth, and willeth not [...] Proverbs 13:4</div>
       </div>
 
       <span class="man-text-title">GPG</span><br>
-      <span class="man-text-normal">Grab my personal key <a class="overview-link" href="public/leoatleogillet.com.gpg">here</a> (direct download)</span><br><br>
-      <div class="man-footer-wrapper">
-        <span class="man-footer">
-          &nbsp;Manual page contact(1) line 1 (press h for help or q to quit)<span class="blink-block-me">&nbsp;</span>
-        </span>
-      </div>
+      <span class="man-text-normal">Grab my personal key <a class="overview-link"
+          href="public/leoatleogillet.com.gpg">here</a> (direct download)</span><br><br>
     </div>
+    <span class="man-footer">Manual page contact(1) line 1 (press h for help or q to quit)<span
+        class="blink-block-me">&nbsp;</span></span>
   </div>
+
   <div class="footer-wrapper">
     <ul class="footer">
       <li>[leogillet.com] 0:man*</li>
-      <li>Font: <a class="inverted-overview-link" href="https://typeof.net/Iosevka/">Iosevka</a> "milkyway" <span id="time"></span> <span id="date"></span></li>
+      <li><span id="font">Font: <a class="inverted-overview-link" href="https://typeof.net/Iosevka/">Iosevka</a>
+        </span><span id="location">"earth" </span><span id="time"></span> <span id="date"></span></li>
     </ul>
   </div>
   <script src="src/tabs.js"></script>
