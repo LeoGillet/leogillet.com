@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' leogillet.com *.leogillet.com; script-src leogillet.com 'sha256-u/PRe/qoCNmJRpK8ZLwghsRTFr0KvcL8+T5E458bbBM=' ; img-src 'self' leogillet.com *.leogillet.com; style-src 'self' unsafe-inline; child-src 'none';" />
   <title>leogillet(dot)com</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
@@ -32,7 +34,6 @@
   <link rel="stylesheet" href="src/main.css" />
   <link rel="stylesheet" href="src/mobile.css" />
   <link rel="stylesheet" href="src/fonts.css" />
-  <script src="https://kit.fontawesome.com/2833c8b616.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
   </div>
 
   <!-- CODING -->
-  <div class="main" id="codingDiv" style="display: block">
+  <div class="main" id="codingDiv">
     <div class="man-header">
       <ul class="man-header-list">
         <li class="man-header-token-left">CODING(1)</li>
@@ -69,7 +70,7 @@
           pools on your FiveM server</div>
 
         <div class="overview-name"><a class="overview-link"
-            href="https://github.com/LeoGillet/chap-docker">chap-docker</a> <i class="fa-brands fa-docker"></i></div>
+            href="https://github.com/LeoGillet/chap-docker">chap-docker</a></div>
         <div class="overview-description">Minimal debian docker image with CHAP and GROMACS installations</div>
       </div>
 
@@ -108,7 +109,7 @@
 
 
   <!-- OTHERS -->
-  <div class="main" id="othersDiv" style="display: none">
+  <div class="main" id="othersDiv">
     <div class="man-header">
       <ul class="man-header-list">
         <li class="man-header-token-left">STUFF(1)</li>
@@ -139,10 +140,6 @@
         <div class="overview-name"><a class="overview-link" href="https://gitlab.com/LeoGillet/dotfiles">dotfiles</a>
         </div>
         <div class="overview-description">My dotfiles - includes sway, zsh & alacritty configs</div>
-
-        <div class="overview-name"><a class="overview-link" href="https://gitlab.com/LeoGillet/leogillet.com">leogillet.com</a>
-        </div>
-        <div class="overview-description italic">this</div>
       </div>
 
       <br>
@@ -159,7 +156,7 @@
   </div>
 
   <!-- CONTACT -->
-  <div class="main" id="contactDiv" style="display: none">
+  <div class="main" id="contactDiv">
     <div class="man-header">
       <ul class="man-header-list">
         <li class="man-header-token-left">CONTACT(1)</li>

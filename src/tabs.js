@@ -41,3 +41,5 @@ Array.prototype.forEach.call(tabs, function (tab) {
         tabChange(event.srcElement);
     });
 })
+
+tabChange(document.getElementById('codingTab'));
