@@ -65,6 +65,8 @@
 
     .overview {
         padding: 0 5%;
+        display: grid;
+        grid-template-columns: 2fr;
     }
 
     .man-header-token-left {
@@ -73,11 +75,6 @@
 
     .man-header-token-right {
         padding: 0 0 0 0.15rem;
-    }
-
-    .overview {
-        display: grid;
-        grid-template-columns: 2fr;
     }
 
     .overview-description {
